@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+
+:root {
+  --primary: #FFE8DF;
+  --secondary: #F0F0F0;
+  --terciary: #D5D46F;
+  --light: #d4bfbf9c;
+  --dark: #888888;
+  --black: #000222;
+  --white: #FFFFFF;
+  --orange: #c44a15;
+}
+
+
+body {
+  background-color: var(--primary);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+div.resultado {
+  height: 70px;
+  width: 350px;
+  background-color: #D5D46F;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+h2 {
+  color: var(--orange);
+  font-size: 2rem;
+}
+
+
+div.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+div.buttons {
+  margin: 10px;
+  height: 350px;
+  background-color: var(--light);
+  width: 350px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+div.funciones {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+div.funciones button {
+  height: 45px;
+  width: 45px;
+  border: none;
+  border-radius: 20%;
+  background-color: var(--primary);
+  transition: .3s;
+}
+
+
+div.funciones button img {
+  height: 45px;
+  width: 45px;
+}
+
+div.funciones button:hover {
+  background-color: var(--secondary);
+}
+
+div.buttons .numeros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 200px;
+  gap: 10px;
+}
+
+div.buttons .numeros button {
+  height: 60px;
+  width: 60px;
+  border-radius: 40%;
+  background-color: var(--secondary);
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  transition: .6s;
+  color: var(--dark);
+}
+
+div.buttons .numeros button:hover {
+  background-color: var(--dark);
+  color: var(--secondary);
+}
+
+div.buttons .operadores {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+
+div.buttons .operadores button {
+  height: 60px;
+  width: 60px;
+  border-radius: 40%;
+  border: none;
+  outline: none;
+  background-color: var(--white);
+  color: var(--black);
+  transition: .4s;
+  font-size: 1.2rem;
+  color: var(--orange);
+}
+
+div.buttons .operadores button:hover {
+  background-color: var(--terciary);
+}
