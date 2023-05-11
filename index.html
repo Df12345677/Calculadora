@@ -12,18 +12,22 @@
 			href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
+
 		<link rel="shortcut icon" href="./calculadora.png" type="image/x-icon" />
+		<script src="./index.js" defer></script>
 	</head>
 	<body>
 		<h2>Calculadora</h2>
 		<div class="resultado">
-			<h2>0</h2>
+			<h2 id="pantalla">0</h2>
 		</div>
 
 		<div class="buttons">
 			<div class="funciones">
-				<button>C</button>
-				<button><img src="./backspace-svgrepo-com.svg" alt="<---" /></button>
+				<button id="borrarTodo">C</button>
+				<button id="borrar">
+					<img src="./backspace-svgrepo-com.svg" alt="<---" />
+				</button>
 			</div>
 			<div class="buttons-container">
 				<div class="numeros">
@@ -37,12 +41,13 @@
 					<button class="numero">8</button>
 					<button class="numero">9</button>
 					<button class="numero">0</button>
+					<button id="igual">=</button>
 				</div>
 				<div class="operadores">
-					<button>÷</button>
-					<button>x</button>
-					<button>+</button>
-					<button>-</button>
+					<button class="operador" operador="dividir">÷</button>
+					<button class="operador" operador="multiplicar">x</button>
+					<button class="operador" operador="sumar">+</button>
+					<button class="operador" operador="restar">-</button>
 				</div>
 			</div>
 		</div>
